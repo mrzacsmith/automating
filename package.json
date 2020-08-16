@@ -4,9 +4,13 @@
   "description": "- Building - Developing - Testing - Deploying",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "sass": "node-sass pretty.sass pretty.css",
+    "server": "nodemon index.js",
+    "start": "cross-env PORT=5525 node index.js",
+    "test": "mocha",
+    "test:watch": "mocha --watch",
+    "test:coverage": "nyc mocha"
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
@@ -20,7 +24,10 @@
   },
   "homepage": "https://github.com/mrzacsmith/automating#readme",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "cross-env": "^7.0.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "sass": "^1.26.10"
   },
   "dependencies": {
     "express": "^4.17.1"
