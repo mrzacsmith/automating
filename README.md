@@ -13,4 +13,8 @@
 
 - nodemon
 - cross-env
-- sass (install -D, create sass script then run sass script)
+- sass (requires folder and name.sass to be available)
+- mocha
+- nyc (istanbul)
+- open-cli
+- rimraf (if using webpack)

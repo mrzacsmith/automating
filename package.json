@@ -4,12 +4,18 @@
   "description": "- Building - Developing - Testing - Deploying",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass pretty.sass pretty.css",
+    "sass": "node-sass ./css/styles.sass ./css/styles.css",
+    "sass:watch": "node-sass ./css/styles.sass ./css/styles.css --watch",
+    "sass:production": "sass -q --no-source-map ./css/styles.sass ./css/styles.css",
     "server": "nodemon index.js",
     "start": "cross-env PORT=5525 node index.js",
+    "prestart": " npm run sass && npm run server",
+    "pretest": "npm run sass && npm run server",
     "test": "mocha",
     "test:watch": "mocha --watch",
-    "test:coverage": "nyc mocha"
+    "posttest": "rimraf",
+    "test:coverage": "nyc --reporter=html mocha",
+    "posttest:covage": "open-cli ./coverage/index.html",
     "tsc": "tsc"
   },
   "repository": {
