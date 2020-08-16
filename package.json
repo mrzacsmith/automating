@@ -1,0 +1,28 @@
+{
+  "name": "automating",
+  "version": "1.0.0",
+  "description": "- Building - Developing - Testing - Deploying",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrzacsmith/automating.git"
+  },
+  "keywords": [],
+  "author": "Mr Zac Smith <zrs3141592@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrzacsmith/automating/issues"
+  },
+  "homepage": "https://github.com/mrzacsmith/automating#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
