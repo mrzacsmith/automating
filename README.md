@@ -18,3 +18,11 @@
 - nyc (istanbul)
 - open-cli
 - rimraf (if using webpack)
+
+## VSC Tasks
+
+Automate using tasks rather than scripts in package.json
+
+- Run Task
+- Run Test Task
+- etc
